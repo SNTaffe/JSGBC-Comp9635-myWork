@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Toronto Bike Share</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+    <head>
+    <meta charset="utf-8">
+    <title> BikeShare Toronto Availability</title>
+    <script type="text/javascript" src="./bikes.js"></script>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h2>BikeShare Availability</h2> 
+    <div>
+      <input id="userAddress" type="text" placeholder="Your Current Address" ></input>
+      <button id="myButton"> Find Bikes Near You</button>
+    </div>
+
+    <h3>Your Search Results are Below:</h3>
+
+    <div>
+      <span> <h3>Lat: </h3></span>
+      <span id="lat" />
+    </div>
+    <div>
+      <span><h3> Lng: </h3></span>
+      <span id="lng"/>
+    </div>
+
+    <div id="map"></div>
+<div id="addListHere"></div>    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMYnXcAtv6frhfBoPIJkH8i_O4ey0ciKs&callback=initGeocode">
+    </script>
+  </body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
